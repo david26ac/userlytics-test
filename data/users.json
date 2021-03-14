@@ -1,0 +1,32 @@
+[
+    {
+        "id" : "1",
+        "name" : "Alonso",      
+        "img" : "img/alonso.jpeg"
+    },
+    {
+        "id" : "2",
+        "name" : "Agustin",      
+        "img" : "img/agustin.jpeg"
+    },
+    {
+        "id" : "3",
+        "name" : "Gabriela",       
+        "img" : "img/gabriela.jpeg"
+    },
+    {
+        "id" : "4",
+        "name" : "Jhon",        
+        "img" : "img/jhon.jpeg"
+    },
+    {
+        "id" : "5",
+        "name" : "Bob",       
+        "img" : "img/bob.jpeg"
+    },
+    {
+        "id" : "6",
+        "name" : "Rachel",       
+        "img" : "img/rachel.jpeg"     
+    }
+]

@@ -1,0 +1,82 @@
+nav a {
+  color: #f3f3f3;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+main {
+  padding: 35px 0;
+}
+main .input_box {
+  width: 300px;
+}
+main .input_box .msg {
+  margin: 15px 0 0;
+}
+main .numbers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  padding: 35px 0;
+}
+main .numbers .number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+main .numbers .number span {
+  color: whitesmoke;
+}
+main .numbers .purple {
+  background-color: #7209B7;
+}
+main .numbers .red {
+  background-color: #E63946;
+}
+main .numbers .blue {
+  background-color: #1d3557;
+}
+main .numbers .green {
+  background-color: #B1E3A1;
+}
+main .numbers .normal {
+  background-color: #f3f3f3;
+  border: 1px solid #ced4da;
+}
+main .numbers .normal span {
+  color: #212529;
+}
+
+@media screen and (max-width: 768px) {
+  nav .nav-link {
+    padding: 1rem 0;
+  }
+
+  main .input_box {
+    width: 300px;
+    margin: 0 auto;
+  }
+  main .numbers {
+    justify-content: center;
+  }
+  main .numbers .number {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .input_box {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

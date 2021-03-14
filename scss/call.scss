@@ -1,0 +1,295 @@
+@import './colors.scss';
+@import "./fontawesome.scss";
+@import "./solid.scss";
+@import './_icons.scss';
+.call{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: $black;
+    h2{
+        text-align: center;
+        color: $white;
+        background-color: $black;
+    }
+    .cont_share{
+        position: absolute;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        width: 24%;
+        height: auto;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 15px 0px black;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow:    0px 0px 15px 0px black;  /* Firefox 3.5 - 3.6 */
+        box-shadow:         0px 0px 15px 0px black;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+        margin: 5px;
+        background-color: $black;
+        .share_screen{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            position: relative;
+            bottom: 0;
+            left: 0;
+            color: $white;
+            text-align: center;
+        }
+    }
+    .user_cam{
+        width: 15%;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: transparent;
+        position: relative;
+        margin: 5px;
+        .cont_img{
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            i{
+                color: white;
+                height: 30px;
+                width: 30px;
+                position: absolute;
+                left: calc(50% - 15px);
+                top: calc(50% - 30px);
+                z-index: 2;
+            }
+            img{
+                margin: 0 auto;
+            }
+            video{        
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+        .footer_cam{
+            padding: 0 5px;
+            background-color: $blue;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            align-items: center;
+            span{
+                @extend %fa-icon;
+                @extend .fab;
+                padding: 5px;
+                display: block;
+                color: $white;
+                ::before{
+                    color: $white;
+                }
+            }
+            i{
+                display: none;
+            }
+            ::before{
+                color: white;
+                padding: 5px;
+            }
+            .audio_on::before{
+                color: $green;
+            }
+            .no_audio::before{
+                color: $red;
+                padding: 5px;
+            }
+            .no_mic::before{
+                color: $red;
+            }
+            .open_mic::before{
+                color: $green;
+            }
+            .mic_display{
+                display: block;
+            }
+        }
+    } 
+    .main_user{
+        border: 2px solid $green;
+        border-radius: 10px;
+    }
+}
+.footer_call{
+    width: 100%;
+    height: 10vh;
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .share_button{
+        background-color: $green;
+        color: $black;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        border: 0px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .stop_video{
+        background-color: $red;
+        color: $black;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        border: 0px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .start_video{
+        background-color: $white;
+        color: $black;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        border: 0px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .stop_sharing{
+        background-color: $red;
+        color: $black;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        border: 0px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .mic{
+        background-color: $black;
+        color: $black;
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        text-align: center;
+        border: 0px;
+        border-radius: 5px;
+        margin: 0 5px;
+        display: none;
+        .no_mic::before{
+            color: $red;
+        }
+        .open_mic::before{
+            color: $green;
+        }
+    }
+    .range_box{
+        width: 100px;
+    }
+    .mic_show{
+        display: block;
+    }
+    i{
+        display: none;
+    }
+    .mic_display{
+        display: block;
+    }
+    .no_display{
+        display: none;
+    }
+}
+.cont_name{
+    width: 100%;
+    margin-bottom: 15px;
+    .error_user{
+        color: $red;
+        padding-top: 15px;
+        font-size: 0.8em;
+        display: none;
+    }
+    .display_error{
+        display: block;
+    }
+}
+.modal-body{
+    p{
+        margin-bottom: 0;
+        b{
+            color: $blue;
+        }
+    }
+}
+@media screen and (max-width: 1440px){
+    .call{
+        .user_cam{
+            width: 22%;
+            .cont_img{
+                height: 160px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .call{
+        .user_cam{
+            width: 30%;
+            .cont_img{
+                height: 160px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .call{
+        height: auto;
+        padding: 15px;
+        .user_cam{
+            width:45%;
+            .cont_img{
+                height: 160px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .call{
+        height: auto;
+        padding: 15px 15px 15vh;
+        .user_cam{
+            width:100%;
+            .cont_img{
+                height: 160px;
+            }
+        }
+        .main_user{
+            position: fixed;
+            bottom: 10vh;
+            right: 0;
+            z-index: 3;
+            width: 150px;
+            height: 100px;
+            .cont_img{
+                height: 100%;
+                video{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .cont_share{
+            width: 150px;
+            height: 100px;
+            position: fixed;
+        }
+    }
+    .footer_call{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}

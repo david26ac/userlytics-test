@@ -1,0 +1,89 @@
+@import './colors.scss';
+nav{
+    a{
+        color: #f3f3f3;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+//Main
+main{
+    padding: 35px 0;
+    .input_box{
+        width: 300px;
+        .msg{
+            margin: 15px 0  0;
+        }
+    }
+    .numbers{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        padding: 35px 0;
+        .number{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin: 5px;
+            span{
+                color: whitesmoke;
+            }
+        }
+        .purple{
+            background-color: $purple;
+        }
+        .red{
+            background-color: $red;
+        }
+        .blue{
+            background-color: $blue;
+        }
+        .green{
+            background-color: $green;
+        }
+        .normal{
+            background-color: $white;
+            border: 1px solid $grey;
+            span{
+                color: $black;
+            }
+        }
+    }
+}
+//Responsive
+@media screen and (max-width: 768px){
+    nav{
+        .nav-link{
+            padding: 1rem 0; 
+        }
+    }
+    main{
+        .input_box{
+            width: 300px;
+            margin: 0 auto;
+        }
+        .numbers{
+            justify-content: center;
+            .number{
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    main{
+        .input_box{
+            width: 100%;
+        }
+    }
+}
