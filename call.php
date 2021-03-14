@@ -42,9 +42,9 @@
                     <input class="form-control" type="text" id='user_name' max="400" value="" placeholder="Type your user name" aria-label="default input example">
                 </div>
                 <p>
-                    You are about to star a meeting. 
+                    You are about to join a meeting. 
                     <br>
-                    <b>Would you like to turn on your mic and camera?</b> 
+                    <b>Would you like to turn on your microphone and camera?</b> 
                 </p>
             </div>
             <div class="modal-footer">
